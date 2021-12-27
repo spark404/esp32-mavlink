@@ -1,0 +1,21 @@
+{
+  "name": "esp32-mavlink",
+  "version": "1.0.0",
+  "keywords": "esp32, mavlink",
+  "description": "ESP32 component for handling the mavlink2 protocol.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/espressif/esp32-camera"
+  },
+  "frameworks": "espidf",
+  "platforms": "*",
+  "build": {
+    "flags": [
+      "-Iinclude",
+      "-Ipriv_include"
+    ],
+    "includeDir": ".",
+    "srcDir": ".",
+    "srcFilter": ["-<*>", "+<lib>"]
+  }
+}
